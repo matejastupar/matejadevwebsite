@@ -7,13 +7,10 @@
     }"
     class="h-screen w-fit flex"
   >
-    <PageContainer containerwidth="70">
-      <ContentContainerStack>
-        <NuxtLink to="/" data-scroll><UButton>to home</UButton></NuxtLink>
-        <NuxtLink to="/projects" data-scroll><UButton>to projects</UButton></NuxtLink>
-      </ContentContainerStack>
-      <h1 data-scroll class="font-playwrite text-3xl">about page</h1>
-      <h3>this is the about page test</h3>
+    <PageContainer containerwidth="60">
+      <NuxtLink to="/" data-scroll><UButton>to home</UButton></NuxtLink>
+      <h1 data-scroll class="font-playwrite text-6xl">projects page</h1>
+      <h3>this is the projects page test</h3>
     </PageContainer>
     <PageImageScrollContainer containerwidth="80">
       scrol1
