@@ -26,7 +26,7 @@ onMounted(() => {
 
   circlespinnerRef.value = useAnime({
     targets: '.circlespinner',
-    rotate: '360deg',
+    rotate: '720deg',
     translateX: ['-50%', '-50%'],
     duration: 1200,
     loop: true,
