@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 const props = defineProps({
-  containerwidth: {type: String, default: 50, required: true}
+  containerwidth: {type: String, default: 50, required: false}
 });
 </script>
 
