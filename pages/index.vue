@@ -29,16 +29,21 @@
         <ContentGridELQ class="col-start-5 row-start-1"></ContentGridELQ>
         <ContentGridELH class="col-start-4 row-start-2"></ContentGridELH>
         <ContentGridELF class="col-start-6"></ContentGridELF>
-        <ContentGridELQ class="col-start-7 row-start-1"></ContentGridELQ>
-        <ContentGridELQ class="col-start-8 row-start-1"></ContentGridELQ>
-        <ContentGridELQ class="col-start-7 row-start-2"></ContentGridELQ>
-        <ContentGridELQ class="col-start-8 row-start-2"></ContentGridELQ>
       </ContentGridContainer>
     </PageContainer>
-    <PageImageScrollContainer containerwidth="80">
+    <PageImageScrollContainer containerwidth="80" containerimage="/imgs/flower.jpg">
       <h2>hello there</h2>
     </PageImageScrollContainer>
-    <PageContainer containerwidth="160">
+    <PageImageScrollContainer containerwidth="80" containerimage="/imgs/people.jpg">
+      <h2>hello there 222</h2>
+    </PageImageScrollContainer>
+    <PageContainer containerwidth="80">
+      page
+    </PageContainer>
+    <PageImageScrollContainer containerwidth="80">
+      <h2>hello there 3</h2>
+    </PageImageScrollContainer>
+    <PageContainer containerwidth="120">
       page
     </PageContainer>
   </div>

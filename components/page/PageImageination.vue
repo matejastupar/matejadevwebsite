@@ -18,12 +18,10 @@
 
 <style scoped>
 .background {
-    background: radial-gradient(ellipse at center 40%, #161616, #080808);
-}
-
-.scrolltext {
-  -webkit-text-stroke: 1px white;
-  -webkit-text-fill-color: transparent;
+  background: -o-radial-gradient(ellipse at center 40%, #161616, #080808);
+  background: -moz-radial-gradient(ellipse at center 40%, #161616, #080808);
+  background: -webkit-radial-gradient(ellipse at center 40%, #161616, #080808);
+  background: radial-gradient(ellipse at center 40%, #161616, #080808);
 }
 
 svg {

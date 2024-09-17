@@ -1,7 +1,7 @@
 <template>
   <div :id="containerid" :style="{ 'width': props.containerwidth + 'vw'}" style="height:100vh" class="pagecontainer" data-scroll-section>
-    <div class="z-[-10] h-full w-96 overflow-hidden" data-scroll data-scroll-sticky :data-scroll-target=" '#' + containerid ">
-      <NuxtImg class="z-[-10] h-full object-cover object-left opacity-25 grayscale brightness-50" data-scroll src="https://imgs.search.brave.com/s3hXeKipCVq3F3N_EMRQWKyxpucfoYgTDy-p5ZfWHY4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8x/MC8zMS8wNi8wOC9i/cml0aXNoLWNvbHVt/YmlhLTM3ODUyNTRf/NjQwLmpwZw" />
+    <div class="z-[-10] h-full w-96 overflow-hidden scrollimage-enter" data-scroll data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-class="scrollimage" data-scroll-repeat="true" data-scroll-sticky :data-scroll-target=" '#' + containerid ">
+      <img class="z-[-10] h-full object-cover object-left" data-scroll :src="props.containerimage" />
     </div>
     <slot />
   </div>
@@ -9,7 +9,8 @@
 
 <script setup lang="ts">
 const props = defineProps({
-  containerwidth: {type: String, default: 100, required: true}
+  containerwidth: {type: String, default: 100, required: false},
+  containerimage: {type: String, default: "/imgs/laptop.jpg", required: false}
 });
 
 const containerid = useId();
@@ -23,5 +24,14 @@ const containerid = useId();
 
 .pagecontainer > * {
   margin-right: 2rem;
+}
+
+.scrollimage {
+  opacity: 25%;
+  filter: brightness(50%) grayscale(100%);
+}
+
+.scrollimage-enter {
+  transition: 500ms opacity ease-in-out, 250ms filter ease-in-out;
 }
 </style>
