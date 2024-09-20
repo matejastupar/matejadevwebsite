@@ -1,6 +1,6 @@
 <template>
   <div :id="containerid" :style="{ 'width': props.containerwidth + 'vw'}" style="height:100vh" class="pagecontainer" data-scroll-section>
-    <div class="z-[-10] h-full w-96 overflow-hidden scrollimage-enter select-none " data-scroll data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-class="scrollimage" data-scroll-repeat="true" data-scroll-sticky :data-scroll-target=" '#' + containerid ">
+    <div class="z-[-10] h-full w-96 overflow-hidden scrollimage-enter select-none" data-scroll data-scroll-id="hey" data-scroll-position="left" data-scroll-direction="horizontal" data-scroll-class="scrollimage" data-scroll-repeat="true" data-scroll-sticky :data-scroll-target=" '#' + containerid ">
       <NuxtImg class="z-[-10] h-full object-cover object-left" data-scroll :src="props.containerimage" />
     </div>
     <slot />
