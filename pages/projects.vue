@@ -41,6 +41,10 @@
                         </g>
                     </svg>
                 </span>
+                <UButton to="/" color="lavanda" variant="outline" size="xl" class="rounded-full w-fit transition-all duration-200 group font-bold">
+                    <UIcon name="line-md-arrow-left" class="translate-x-1 group-hover:-translate-x-1 group-active:scale-110 group-active:text-white transition-all duration-150" />
+                    back to homepage
+                </UButton>
             </ContentContainerStack>
         </PageContainer>
 
