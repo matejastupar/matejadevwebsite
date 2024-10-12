@@ -51,7 +51,7 @@
                     and having <span class="text-minta-500">fun</span>.
                 </h2>
                 <h3 class="text-2xl text-monoa-300 select-none">
-                    not necessarily in that order... :P
+                    not necessarily in that order...
                 </h3>
             </ContentContainerStack>
         </PageContainer>
