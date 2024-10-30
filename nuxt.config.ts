@@ -7,13 +7,6 @@ export default defineNuxtConfig({
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       title: "mateja.dev",
-      script: [
-        {
-          defer: true,
-          src: "http://192.168.1.69:43300/script.js",
-          "data-website-id": "b5ba1100-3cb3-403c-b894-2b9a7a6d38ad",
-        },
-      ],
     },
   },
   devServer: {
@@ -27,11 +20,17 @@ export default defineNuxtConfig({
     "nuxt-locomotive-scroll",
     "@nuxt/image",
     "@hypernym/nuxt-anime",
+    "nuxt-umami",
   ],
   css: ["assets/css/tailwind.css"],
   anime: {
     provide: true,
     composables: true,
     autoImport: true,
+  },
+  umami: {
+    id: "b5ba1100-3cb3-403c-b894-2b9a7a6d38ad",
+    host: "http://192.168.1.69:43300",
+    autoTrack: true,
   },
 });
