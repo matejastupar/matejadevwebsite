@@ -29,8 +29,8 @@ export default defineNuxtConfig({
     autoImport: true,
   },
   umami: {
-    id: "b5ba1100-3cb3-403c-b894-2b9a7a6d38ad",
-    host: "http://192.168.1.69:43300",
+    id: "23977b66-9771-42ed-8c3e-dd0bf7f2ded8",
+    host: "https://umami.mejtscheapassdomain.site/",
     autoTrack: true,
   },
 });
