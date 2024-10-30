@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     autoImport: true,
   },
   umami: {
-    id: "bookerappointments.online",
+    id: "b5ba1100-3cb3-403c-b894-2b9a7a6d38ad",
     host: "http://192.168.1.69:43300",
     autoTrack: true,
   },
